@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\guzma\\OneDrive\\Escritorio\\compu nacho\\TP-Biblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{986F6BD3-ECEC-469C-BE48-001E29092C12}|TP-Biblioteca\\TP-Biblioteca.csproj|c:\\users\\guzma\\onedrive\\escritorio\\compu nacho\\tp-biblioteca\\tp-biblioteca\\formularios\\formularioprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986F6BD3-ECEC-469C-BE48-001E29092C12}|TP-Biblioteca\\TP-Biblioteca.csproj|solutionrelative:tp-biblioteca\\formularios\\formularioprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{986F6BD3-ECEC-469C-BE48-001E29092C12}|TP-Biblioteca\\TP-Biblioteca.csproj|c:\\users\\guzma\\onedrive\\escritorio\\compu nacho\\tp-biblioteca\\tp-biblioteca\\formularios\\mdiparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{986F6BD3-ECEC-469C-BE48-001E29092C12}|TP-Biblioteca\\TP-Biblioteca.csproj|solutionrelative:tp-biblioteca\\formularios\\mdiparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormularioPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\guzma\\OneDrive\\Escritorio\\compu nacho\\TP-Biblioteca\\TP-Biblioteca\\Formularios\\FormularioPrincipal.cs",
+              "RelativeDocumentMoniker": "TP-Biblioteca\\Formularios\\FormularioPrincipal.cs",
+              "ToolTip": "C:\\Users\\guzma\\OneDrive\\Escritorio\\compu nacho\\TP-Biblioteca\\TP-Biblioteca\\Formularios\\FormularioPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TP-Biblioteca\\Formularios\\FormularioPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T20:21:38.27Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MDIparent.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\guzma\\OneDrive\\Escritorio\\compu nacho\\TP-Biblioteca\\TP-Biblioteca\\Formularios\\MDIparent.cs",
+              "RelativeDocumentMoniker": "TP-Biblioteca\\Formularios\\MDIparent.cs",
+              "ToolTip": "C:\\Users\\guzma\\OneDrive\\Escritorio\\compu nacho\\TP-Biblioteca\\TP-Biblioteca\\Formularios\\MDIparent.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TP-Biblioteca\\Formularios\\MDIparent.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T20:19:17.105Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
