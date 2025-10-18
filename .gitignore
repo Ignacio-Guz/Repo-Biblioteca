@@ -1,0 +1,24 @@
+# Archivos y carpetas de Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.vsidx
+*.vscode/
+
+# Archivos temporales del sistema
+Thumbs.db
+desktop.ini
+
+# Archivos temporales de OneDrive
+~$*
+
+# Visual Studio Code
+.vscode/
+
+# Archivos compilados
+*.exe
+*.dll

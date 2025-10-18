@@ -16,5 +16,10 @@ namespace TP_Biblioteca.Formularios
         {
             InitializeComponent();
         }
+
+        private void FormularioPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
