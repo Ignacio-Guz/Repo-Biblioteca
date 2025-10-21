@@ -28,78 +28,141 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            dataGridView1 = new DataGridView();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            button3 = new Button();
+            button2 = new Button();
             button1 = new Button();
+            label2 = new Label();
+            textBox1 = new TextBox();
+            dataGridView1 = new DataGridView();
+            btmBuscar = new Button();
+            label1 = new Label();
+            label3 = new Label();
+            textBox2 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // button3
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(58, 51);
-            label1.Name = "label1";
-            label1.Size = new Size(47, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Titulo";
+            button3.BackColor = Color.FromArgb(150, 207, 190);
+            button3.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.Location = new Point(550, 410);
+            button3.Margin = new Padding(3, 2, 3, 2);
+            button3.Name = "button3";
+            button3.Size = new Size(102, 56);
+            button3.TabIndex = 20;
+            button3.Text = "ELIMINAR";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(150, 207, 190);
+            button2.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(288, 410);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(102, 56);
+            button2.TabIndex = 19;
+            button2.Text = "MODIFICAR";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(150, 207, 190);
+            button1.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(40, 410);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(102, 56);
+            button1.TabIndex = 18;
+            button1.Text = "AGREGAR";
+            button1.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(58, 97);
+            label2.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(40, 43);
             label2.Name = "label2";
-            label2.Size = new Size(46, 20);
-            label2.TabIndex = 1;
-            label2.Text = "Autor";
+            label2.Size = new Size(135, 19);
+            label2.TabIndex = 17;
+            label2.Text = "DATOS DE LIBRO";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(137, 120);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(191, 23);
+            textBox1.TabIndex = 16;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(44, 146);
+            dataGridView1.Location = new Point(40, 165);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(620, 320);
-            dataGridView1.TabIndex = 2;
+            dataGridView1.Size = new Size(611, 218);
+            dataGridView1.TabIndex = 15;
             // 
-            // textBox1
+            // btmBuscar
             // 
-            textBox1.Location = new Point(222, 49);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 3;
+            btmBuscar.BackColor = Color.FromArgb(150, 207, 190);
+            btmBuscar.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btmBuscar.Location = new Point(354, 105);
+            btmBuscar.Margin = new Padding(3, 2, 3, 2);
+            btmBuscar.Name = "btmBuscar";
+            btmBuscar.Size = new Size(96, 38);
+            btmBuscar.TabIndex = 14;
+            btmBuscar.Text = "BUSCAR";
+            btmBuscar.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(40, 120);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 19);
+            label1.TabIndex = 13;
+            label1.Text = "AUTOR";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(40, 90);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 19);
+            label3.TabIndex = 21;
+            label3.Text = "TÍTULO";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(222, 94);
+            textBox2.Location = new Point(137, 86);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(569, 78);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 5;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = true;
+            textBox2.Size = new Size(191, 23);
+            textBox2.TabIndex = 22;
             // 
             // FrmLibro
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1314, 770);
-            Controls.Add(button1);
+            BackColor = Color.FromArgb(199, 200, 202);
+            ClientSize = new Size(689, 562);
             Controls.Add(textBox2);
+            Controls.Add(label3);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(dataGridView1);
-            Controls.Add(label2);
+            Controls.Add(btmBuscar);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "FrmLibro";
             Text = "FrmLibro";
+            Load += FrmLibro_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -107,11 +170,15 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private DataGridView dataGridView1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Button button3;
+        private Button button2;
         private Button button1;
+        private Label label2;
+        private TextBox textBox1;
+        private DataGridView dataGridView1;
+        private Button btmBuscar;
+        private Label label1;
+        private Label label3;
+        private TextBox textBox2;
     }
 }

@@ -16,5 +16,10 @@ namespace TP_Biblioteca
         {
             InitializeComponent();
         }
+
+        private void FrmLibro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
