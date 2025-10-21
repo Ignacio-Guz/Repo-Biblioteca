@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TP_Biblioteca.Formularios
+namespace TP_Biblioteca
 {
-    public partial class FormularioPrincipal : Form
+    public partial class FormABMLibro : Form
     {
-        public FormularioPrincipal()
+        public FormABMLibro()
         {
             InitializeComponent();
-        }
-
-        private void FormularioPrincipal_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
