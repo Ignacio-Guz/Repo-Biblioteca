@@ -124,7 +124,7 @@
             label1.Name = "label1";
             label1.Size = new Size(54, 19);
             label1.TabIndex = 13;
-            label1.Text = "AUTOR";
+            label1.Text = "Autor";
             // 
             // label3
             // 
@@ -134,7 +134,7 @@
             label3.Name = "label3";
             label3.Size = new Size(63, 19);
             label3.TabIndex = 21;
-            label3.Text = "TÍTULO";
+            label3.Text = "Título";
             // 
             // textBox2
             // 
@@ -161,7 +161,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FrmLibro";
-            Text = "FrmLibro";
+            Text = "Libro";
             Load += FrmLibro_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

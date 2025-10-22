@@ -47,7 +47,7 @@
             label1.Name = "label1";
             label1.Size = new Size(90, 19);
             label1.TabIndex = 0;
-            label1.Text = "DOCUMENTO";
+            label1.Text = "Documento";
             // 
             // btmBuscar
             // 
@@ -141,7 +141,8 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FrmUsuario";
-            Text = "FrmUsuario";
+            Text = "Usuario";
+            Load += FrmUsuario_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace TP_Biblioteca
 {
-    public partial class FormABMUsuario : Form
+    public partial class FormAltaUsuario : Form
     {
-        public FormABMUsuario()
+        public FormAltaUsuario()
         {
             InitializeComponent();
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -228,7 +228,7 @@
             label5.Name = "label5";
             label5.Size = new Size(56, 18);
             label5.TabIndex = 1;
-            label5.Text = "Titulo";
+            label5.Text = "Título";
             // 
             // label4
             // 
@@ -238,7 +238,7 @@
             label4.Name = "label4";
             label4.Size = new Size(104, 18);
             label4.TabIndex = 0;
-            label4.Text = "Codigo Libro";
+            label4.Text = "Código Libro";
             // 
             // label7
             // 
@@ -248,7 +248,7 @@
             label7.Name = "label7";
             label7.Size = new Size(120, 18);
             label7.TabIndex = 7;
-            label7.Text = "Fecha Prestamo";
+            label7.Text = "Fecha Préstamo";
             // 
             // label8
             // 
@@ -258,7 +258,7 @@
             label8.Name = "label8";
             label8.Size = new Size(136, 18);
             label8.TabIndex = 8;
-            label8.Text = "Fecha Devolucion";
+            label8.Text = "Fecha Devolución";
             // 
             // textBox8
             // 
@@ -318,7 +318,8 @@
             Font = new Font("Consolas", 11.25F);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FrmPrestamo";
-            Text = "FrmPrestamo";
+            Text = "Préstamo";
+            Load += FrmPrestamo_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

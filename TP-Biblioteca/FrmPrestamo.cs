@@ -51,5 +51,10 @@ namespace TP_Biblioteca
         {
 
         }
+
+        private void FrmPrestamo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace TP_Biblioteca
 {
-    partial class FormABMLibro
+    partial class FormAltaLibro
     {
         /// <summary>
         /// Required designer variable.
@@ -75,7 +75,7 @@
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 2, 3, 2);
             groupBox1.Size = new Size(580, 370);
-            groupBox1.TabIndex = 4;
+            groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Libro";
             // 
@@ -119,7 +119,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Consolas", 11.25F);
-            label8.Location = new Point(23, 245);
+            label8.Location = new Point(23, 244);
             label8.Name = "label8";
             label8.Size = new Size(136, 18);
             label8.TabIndex = 12;
@@ -129,7 +129,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Consolas", 11.25F);
-            label7.Location = new Point(23, 216);
+            label7.Location = new Point(23, 215);
             label7.Name = "label7";
             label7.Size = new Size(120, 18);
             label7.TabIndex = 11;
@@ -139,7 +139,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Consolas", 11.25F);
-            label6.Location = new Point(23, 187);
+            label6.Location = new Point(23, 186);
             label6.Name = "label6";
             label6.Size = new Size(80, 18);
             label6.TabIndex = 10;
@@ -149,7 +149,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Consolas", 11.25F);
-            label5.Location = new Point(23, 158);
+            label5.Location = new Point(23, 157);
             label5.Name = "label5";
             label5.Size = new Size(80, 18);
             label5.TabIndex = 9;
@@ -159,7 +159,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Consolas", 11.25F);
-            label4.Location = new Point(23, 129);
+            label4.Location = new Point(23, 128);
             label4.Name = "label4";
             label4.Size = new Size(128, 18);
             label4.TabIndex = 8;
@@ -181,7 +181,7 @@
             button1.Name = "button1";
             button1.Size = new Size(106, 36);
             button1.TabIndex = 6;
-            button1.Text = "Actualizar";
+            button1.Text = "Guardar";
             button1.UseVisualStyleBackColor = false;
             // 
             // textBox3
@@ -215,7 +215,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Consolas", 11.25F);
-            label3.Location = new Point(23, 100);
+            label3.Location = new Point(23, 99);
             label3.Name = "label3";
             label3.Size = new Size(64, 18);
             label3.TabIndex = 2;
@@ -225,7 +225,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Consolas", 11.25F);
-            label2.Location = new Point(23, 71);
+            label2.Location = new Point(23, 70);
             label2.Name = "label2";
             label2.Size = new Size(48, 18);
             label2.TabIndex = 1;
@@ -235,20 +235,20 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Consolas", 11.25F);
-            label1.Location = new Point(23, 42);
+            label1.Location = new Point(23, 41);
             label1.Name = "label1";
             label1.Size = new Size(56, 18);
             label1.TabIndex = 0;
             label1.Text = "Título";
             // 
-            // FormABMLibro
+            // FormAltaLibro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(groupBox1);
-            Name = "FormABMLibro";
-            Text = " Modificar Libro";
+            Name = "FormAltaLibro";
+            Text = "FormAltaLibro";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);

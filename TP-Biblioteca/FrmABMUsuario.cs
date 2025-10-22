@@ -21,5 +21,10 @@ namespace TP_Biblioteca
         {
 
         }
+
+        private void FrmUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
