@@ -21,10 +21,22 @@ namespace TP_Biblioteca
         {
 
         }
+        private void BtmNuevo_Click(object sender, EventArgs e)
+        {
+            FrmUsuarioNuevo frm = new FrmUsuarioNuevo();
+            frm.Show();
+
+        }
 
         private void FrmUsuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmUsuarioModificar frm = new FrmUsuarioModificar();
+            frm.Show();
         }
     }
 }

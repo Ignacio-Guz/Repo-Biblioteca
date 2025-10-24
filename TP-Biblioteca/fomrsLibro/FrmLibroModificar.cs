@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TP_Biblioteca
 {
-    public partial class FormABMLibro : Form
+    public partial class FrmLibroModificar : Form
     {
-        public FormABMLibro()
+        public FrmLibroModificar()
         {
             InitializeComponent();
         }

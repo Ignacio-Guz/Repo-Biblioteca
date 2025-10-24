@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
-namespace TP_Biblioteca
+namespace TP_Biblioteca.Clases
 {
-    public class BDBILBLIOTECATP
+    public class db
     {
         public static DataTable Select(string sql)
         {
-            string cadena = "Data Source=DESKTOP-1F3E5MP\\SQLEXPRESS;Initial Catalog=BIBLIOTECATP;Integrated Security=True;Trust Server Certificate=True";
+            string cadena = "Data Source=LAPTOP_NACHO\\SQLEXPRESS;Initial Catalog=BIBLIOTECATP;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
             SqlConnection con = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand();
             comando.CommandText = sql;
@@ -25,7 +25,7 @@ namespace TP_Biblioteca
         }
         public static void Grabar(string sql)
         {
-            string cadena = "Data Source=DESKTOP-1F3E5MP\\SQLEXPRESS;Initial Catalog=BIBLIOTECATP;Integrated Security=True;Trust Server Certificate=True";
+            string cadena = "Data Source=LAPTOP_NACHO\\SQLEXPRESS;Initial Catalog=BIBLIOTECATP;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
             SqlConnection con = new SqlConnection(cadena);
             SqlCommand comando = new SqlCommand();
             comando.CommandText = sql;

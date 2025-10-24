@@ -13,7 +13,7 @@ namespace TP_Biblioteca.Formularios
     public partial class MDIparent : Form
     {
         private int childFormNumber = 0;
-
+        public static int CodLibro;
         public MDIparent()
         {
             InitializeComponent();
