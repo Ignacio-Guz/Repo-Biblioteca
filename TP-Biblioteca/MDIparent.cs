@@ -23,7 +23,7 @@ namespace TP_Biblioteca.Formularios
         {
             FrmLibro frm = new FrmLibro();
             frm.Show();
-           
+
         }
 
         private void OpenFile(object sender, EventArgs e)
@@ -91,6 +91,11 @@ namespace TP_Biblioteca.Formularios
             {
                 childForm.Close();
             }
+        }
+
+        private void MDIparent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

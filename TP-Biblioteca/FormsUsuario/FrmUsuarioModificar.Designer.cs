@@ -258,7 +258,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(1510, 728);
             Controls.Add(groupBox1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FrmUsuarioModificar";

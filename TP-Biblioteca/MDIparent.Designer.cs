@@ -96,7 +96,7 @@
             menuStrip.MdiWindowListItem = windowsMenu;
             menuStrip.Name = "menuStrip";
             menuStrip.Padding = new Padding(8, 3, 0, 3);
-            menuStrip.Size = new Size(843, 30);
+            menuStrip.Size = new Size(1524, 30);
             menuStrip.TabIndex = 0;
             menuStrip.Text = "MenuStrip";
             // 
@@ -405,7 +405,7 @@
             toolStrip.Items.AddRange(new ToolStripItem[] { newToolStripButton, openToolStripButton, saveToolStripButton, toolStripSeparator1, printToolStripButton, printPreviewToolStripButton, toolStripSeparator2, helpToolStripButton });
             toolStrip.Location = new Point(0, 30);
             toolStrip.Name = "toolStrip";
-            toolStrip.Size = new Size(843, 27);
+            toolStrip.Size = new Size(1524, 27);
             toolStrip.TabIndex = 1;
             toolStrip.Text = "ToolStrip";
             // 
@@ -479,10 +479,10 @@
             // 
             statusStrip.ImageScalingSize = new Size(20, 20);
             statusStrip.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel });
-            statusStrip.Location = new Point(0, 671);
+            statusStrip.Location = new Point(0, 658);
             statusStrip.Name = "statusStrip";
             statusStrip.Padding = new Padding(1, 0, 19, 0);
-            statusStrip.Size = new Size(843, 26);
+            statusStrip.Size = new Size(1524, 26);
             statusStrip.TabIndex = 2;
             statusStrip.Text = "StatusStrip";
             // 
@@ -496,7 +496,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(843, 697);
+            ClientSize = new Size(1524, 684);
             Controls.Add(statusStrip);
             Controls.Add(toolStrip);
             Controls.Add(menuStrip);
@@ -505,6 +505,7 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "MDIparent";
             Text = "MDIparent";
+            Load += MDIparent_Load;
             menuStrip.ResumeLayout(false);
             menuStrip.PerformLayout();
             toolStrip.ResumeLayout(false);

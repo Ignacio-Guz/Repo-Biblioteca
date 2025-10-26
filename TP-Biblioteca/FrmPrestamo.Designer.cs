@@ -33,7 +33,7 @@
             BtnBuscarUsuario = new Button();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtDoc = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -62,7 +62,7 @@
             groupBox1.Controls.Add(BtnBuscarUsuario);
             groupBox1.Controls.Add(textBox3);
             groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtDoc);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
@@ -79,7 +79,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(316, 134);
+            textBox4.Location = new Point(327, 117);
             textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(59, 31);
@@ -108,20 +108,20 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(133, 88);
+            textBox2.Location = new Point(133, 93);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 31);
             textBox2.TabIndex = 4;
             // 
-            // textBox1
+            // txtDoc
             // 
-            textBox1.Location = new Point(133, 23);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 31);
-            textBox1.TabIndex = 3;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtDoc.Location = new Point(133, 23);
+            txtDoc.Margin = new Padding(3, 2, 3, 2);
+            txtDoc.Name = "txtDoc";
+            txtDoc.Size = new Size(125, 31);
+            txtDoc.TabIndex = 3;
+            txtDoc.TextChanged += textBox1_TextChanged;
             // 
             // label3
             // 
@@ -187,7 +187,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(133, 86);
+            textBox7.Location = new Point(133, 90);
             textBox7.Margin = new Padding(3, 2, 3, 2);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(125, 31);
@@ -306,7 +306,7 @@
             AutoScaleDimensions = new SizeF(10F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(199, 200, 202);
-            ClientSize = new Size(738, 550);
+            ClientSize = new Size(1510, 728);
             Controls.Add(BtnCancelar);
             Controls.Add(BtnGuardar);
             Controls.Add(textBox8);
@@ -336,7 +336,7 @@
         private GroupBox groupBox2;
         private TextBox textBox3;
         private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtDoc;
         private Label label3;
         private TextBox textBox4;
         private Button BtnBuscarUsuario;

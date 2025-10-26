@@ -46,25 +46,22 @@ namespace TP_Biblioteca
         }
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            FrmLibroModificar frm = new FrmLibroModificar();
-            frm.Show();
-        }
-        private void BtnNuevo_Click(object sender, EventArgs e)
-        {
-            FrmLibroNuevo frm = new FrmLibroNuevo();
-            frm.Show();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            if (GrillaLibros.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione un libro para modificar.", "Ningun libro seleccionado");
+                return;
+            }
+            int codLibro = Convert.ToInt32(GrillaLibros.CurrentRow.Cells["CodLibro"].Value);
+            FrmLibroModificar frm = new FrmLibroModificar(codLibro);
+            frm.ShowDialog();
+            CargarGrilla();
         }
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
             if (GrillaLibros.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Seleccione un libro para eliminar.", "Atención");
+                MessageBox.Show("Seleccione un libro para eliminar.", "Ningun libro seleccionado");
                 return;
             }
 
@@ -79,6 +76,20 @@ namespace TP_Biblioteca
                 MessageBox.Show("Libro eliminado correctamente.");
                 CargarGrilla();
             }
+        }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+            FrmLibroNuevo frm = new FrmLibroNuevo();
+            frm.Show();
+        }
+        private void txtTitulo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
