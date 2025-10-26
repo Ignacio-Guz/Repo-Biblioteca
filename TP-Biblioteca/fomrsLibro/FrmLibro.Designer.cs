@@ -111,7 +111,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(12, 99);
+            label3.Location = new Point(12, 95);
             label3.Name = "label3";
             label3.Size = new Size(97, 29);
             label3.TabIndex = 21;
@@ -120,10 +120,10 @@
             // txtTitulo
             // 
             txtTitulo.Font = new Font("Consolas", 15F);
-            txtTitulo.Location = new Point(131, 91);
+            txtTitulo.Location = new Point(110, 91);
             txtTitulo.Margin = new Padding(3, 4, 3, 4);
             txtTitulo.Name = "txtTitulo";
-            txtTitulo.Size = new Size(550, 37);
+            txtTitulo.Size = new Size(571, 37);
             txtTitulo.TabIndex = 22;
             txtTitulo.TextChanged += txtTitulo_TextChanged;
             // 

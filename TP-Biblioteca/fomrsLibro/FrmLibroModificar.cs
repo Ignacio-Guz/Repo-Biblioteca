@@ -8,13 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_Biblioteca.AltasIndividuales;
 using TP_Biblioteca.Clases;
 
 namespace TP_Biblioteca
 {
     public partial class FrmLibroModificar : Form
     {
-        ClassMetodos CM = new ClassMetodos();
+        ClassLibro CL = new ClassLibro();
         int codLibroSeleccionado;
         public FrmLibroModificar(int CodLibro)
         {
@@ -24,8 +25,8 @@ namespace TP_Biblioteca
 
         private void FrmLibroModificar_Load(object sender, EventArgs e)
         {
-            ClassMetodos.CargarCombos(cmbCategoria, cmbEditorial, cmbAutor);
-            ClassMetodos.CargarDatosLibro(codLibroSeleccionado, txtCodLibro, txtTitulo, txtEdicion, txtAñoPubli,
+            ClassLibro.CargarCombosLibro(cmbCategoria, cmbEditorial, cmbAutor);
+            ClassLibro.CargarDatosSeleccionadosLibro(codLibroSeleccionado, txtCodLibro, txtTitulo, txtEdicion, txtAñoPubli,
                 txtCantTotal, txtCantDispo, cmbCategoria, cmbEditorial, cmbAutor);
         }
 
@@ -40,7 +41,7 @@ namespace TP_Biblioteca
             int CodEditorial = Convert.ToInt32(cmbEditorial.SelectedValue);
             int CodCategoria = Convert.ToInt32(cmbCategoria.SelectedValue);
             ClassLibro CL = new ClassLibro();
-            CL.Update(Titulo, Edicion, AñoPubli, CantTotal, CantDisponible, CodAutor, CodEditorial, CodCategoria, codLibroSeleccionado);
+            CL.UpdateLibro(Titulo, Edicion, AñoPubli, CantTotal, CantDisponible, CodAutor, CodEditorial, CodCategoria, codLibroSeleccionado);
             MessageBox.Show("Libro actualizado con exito.");
             this.Close();
         }
@@ -48,6 +49,24 @@ namespace TP_Biblioteca
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnNuevaEditorial_Click(object sender, EventArgs e)
+        {
+            FrmEditorialNueva frmEN = new FrmEditorialNueva();
+            frmEN.ShowDialog();
+            ClassLibro.CargarCombosLibro(cmbCategoria, cmbEditorial, cmbAutor);
+            ClassLibro.CargarDatosSeleccionadosLibro(codLibroSeleccionado, txtCodLibro, txtTitulo, txtEdicion, txtAñoPubli,
+                txtCantTotal, txtCantDispo, cmbCategoria, cmbEditorial, cmbAutor);
+        }
+
+        private void btnNuevoAutor_Click(object sender, EventArgs e)
+        {
+            FrmAutorNuevo frmAN = new FrmAutorNuevo();
+            frmAN.ShowDialog();
+            ClassLibro.CargarCombosLibro(cmbCategoria, cmbEditorial, cmbAutor);
+            ClassLibro.CargarDatosSeleccionadosLibro(codLibroSeleccionado, txtCodLibro, txtTitulo, txtEdicion, txtAñoPubli,
+                txtCantTotal, txtCantDispo, cmbCategoria, cmbEditorial, cmbAutor);
         }
     }
 }

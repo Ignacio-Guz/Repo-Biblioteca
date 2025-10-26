@@ -8,22 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_Biblioteca.AltasIndividuales;
 using TP_Biblioteca.Clases;
 
 namespace TP_Biblioteca
 {
     public partial class FrmLibroNuevo : Form
     {
-        ClassMetodos CM = new ClassMetodos();
+        ClassLibro CM = new ClassLibro();
         public FrmLibroNuevo()
         {
             InitializeComponent();
         }
         private void FrmLibroNuevo_Load(object sender, EventArgs e)
         {
-            CM.CargarCombo(cmbCategoria, "SELECT CodCategoria, Nombre FROM Categoria", "Nombre", "CodCategoria");
-            CM.CargarCombo(cmbEditorial, "SELECT CodEditorial, Nombre FROM Editorial", "Nombre", "CodEditorial");
-            CM.CargarCombo(cmbAutor, "SELECT CodAutor, (Nombre + ' ' + Apellido) AS NombreCompleto FROM Autor", "NombreCompleto", "CodAutor");
+            CM.CargarComboLibro(cmbCategoria, "SELECT CodCategoria, Nombre FROM Categoria", "Nombre", "CodCategoria");
+            CM.CargarComboLibro(cmbEditorial, "SELECT CodEditorial, Nombre FROM Editorial", "Nombre", "CodEditorial");
+            CM.CargarComboLibro(cmbAutor, "SELECT CodAutor, (Nombre + ' ' + Apellido) AS NombreCompleto FROM Autor", "NombreCompleto", "CodAutor");
         }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
@@ -36,7 +37,7 @@ namespace TP_Biblioteca
             int CodEditorial = Convert.ToInt32(cmbEditorial.SelectedValue);
             int CodCategoria = Convert.ToInt32(cmbCategoria.SelectedValue);
             ClassLibro CL = new ClassLibro();
-            CL.Insertar(Titulo, Edicion, AñoPubli, CantTotal, CantDisponible, CodAutor, CodEditorial, CodCategoria);
+            CL.InsertLibro(Titulo, Edicion, AñoPubli, CantTotal, CantDisponible, CodAutor, CodEditorial, CodCategoria);
             MessageBox.Show("Libro guardado con exito.");
         }
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -45,12 +46,18 @@ namespace TP_Biblioteca
         }
         private void btnNuevoAutor_Click(object sender, EventArgs e)
         {
+            FrmAutorNuevo frmAN = new FrmAutorNuevo();
+            frmAN.ShowDialog();
+            CM.CargarComboLibro(cmbAutor, "SELECT CodAutor, (Nombre + ' ' + Apellido) AS NombreCompleto FROM Autor", "NombreCompleto", "CodAutor");
 
         }
 
         private void btnNuevaEditorial_Click(object sender, EventArgs e)
         {
-
+            FrmEditorialNueva frmEN = new FrmEditorialNueva();
+            frmEN.ShowDialog();
+            CM.CargarComboLibro(cmbEditorial, "SELECT CodEditorial, Nombre FROM Editorial", "Nombre", "CodEditorial");
+            CM.CargarComboLibro(cmbAutor, "SELECT CodAutor, (Nombre + ' ' + Apellido) AS NombreCompleto FROM Autor", "NombreCompleto", "CodAutor");
         }
         private void textBox4_TextChanged(object sender, EventArgs e)
         {

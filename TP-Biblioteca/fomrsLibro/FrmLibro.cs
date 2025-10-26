@@ -71,7 +71,8 @@ namespace TP_Biblioteca
 
             if (result == DialogResult.Yes)
             {
-                string sql = "DELETE FROM Libro WHERE CodLibro = " + codLibro;
+                string sql = "DELETE FROM Prestamo WHERE CodLibro = " + codLibro +
+                             "DELETE FROM Libro WHERE CodLibro = " + codLibro; //borra al libro y a los prestamos a los que este relacionado
                 db.Grabar(sql);
                 MessageBox.Show("Libro eliminado correctamente.");
                 CargarGrilla();

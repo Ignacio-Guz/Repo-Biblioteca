@@ -245,6 +245,7 @@
             btnNuevaEditorial.TabIndex = 29;
             btnNuevaEditorial.Text = "+";
             btnNuevaEditorial.UseVisualStyleBackColor = true;
+            btnNuevaEditorial.Click += btnNuevaEditorial_Click;
             // 
             // btnNuevoAutor
             // 
@@ -255,6 +256,7 @@
             btnNuevoAutor.TabIndex = 30;
             btnNuevoAutor.Text = "+";
             btnNuevoAutor.UseVisualStyleBackColor = true;
+            btnNuevoAutor.Click += btnNuevoAutor_Click;
             // 
             // txtCodLibro
             // 

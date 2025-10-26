@@ -41,7 +41,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Consolas", 20F);
-            label1.Location = new Point(21, 19);
+            label1.Location = new Point(20, 20);
             label1.Name = "label1";
             label1.Size = new Size(112, 40);
             label1.TabIndex = 1;
@@ -57,6 +57,7 @@
             BtnGuardar.TabIndex = 29;
             BtnGuardar.Text = "GUARDAR";
             BtnGuardar.UseVisualStyleBackColor = false;
+            BtnGuardar.Click += BtnGuardar_Click_1;
             // 
             // btnCancelar
             // 
@@ -68,6 +69,7 @@
             btnCancelar.TabIndex = 30;
             btnCancelar.Text = "CANCELAR";
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtNombres
             // 
@@ -89,7 +91,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Consolas", 14F);
-            label2.Location = new Point(21, 78);
+            label2.Location = new Point(20, 80);
             label2.Name = "label2";
             label2.Size = new Size(103, 28);
             label2.TabIndex = 33;
@@ -99,7 +101,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Consolas", 14F);
-            label3.Location = new Point(21, 141);
+            label3.Location = new Point(20, 140);
             label3.Name = "label3";
             label3.Size = new Size(129, 28);
             label3.TabIndex = 34;
@@ -110,7 +112,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(199, 200, 202);
-            ClientSize = new Size(668, 436);
+            ClientSize = new Size(672, 443);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(txtApellidos);
