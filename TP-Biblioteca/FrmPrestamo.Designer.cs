@@ -28,330 +28,238 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            textBox4 = new TextBox();
-            BtnBuscarUsuario = new Button();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            txtDoc = new TextBox();
-            label3 = new Label();
-            label2 = new Label();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            grillaUsuarios = new DataGridView();
+            groupBOx1 = new GroupBox();
             label1 = new Label();
+            txtDocumento = new TextBox();
+            btnBuscarUsuario = new Button();
+            btnBuscarlibro = new Button();
             groupBox2 = new GroupBox();
-            BtnBuscarLibro = new Button();
-            textBox7 = new TextBox();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            BtnGuardar = new Button();
-            BtnCancelar = new Button();
-            groupBox1.SuspendLayout();
+            label2 = new Label();
+            txtTitulo = new TextBox();
+            grillaLibros = new DataGridView();
+            btnGuardar = new Button();
+            btnCancelar = new Button();
+            label3 = new Label();
+            txtFechaPrestamo = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)grillaUsuarios).BeginInit();
+            groupBOx1.SuspendLayout();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)grillaLibros).BeginInit();
             SuspendLayout();
             // 
-            // groupBox1
+            // grillaUsuarios
             // 
-            groupBox1.BackColor = Color.FromArgb(150, 207, 190);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(BtnBuscarUsuario);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(txtDoc);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(37, 11);
-            groupBox1.Margin = new Padding(3, 2, 3, 2);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(665, 169);
-            groupBox1.TabIndex = 2;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Usuario";
-            groupBox1.Enter += groupBox1_Enter;
+            grillaUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            grillaUsuarios.DefaultCellStyle = dataGridViewCellStyle1;
+            grillaUsuarios.Location = new Point(23, 82);
+            grillaUsuarios.Name = "grillaUsuarios";
+            grillaUsuarios.RowHeadersWidth = 51;
+            grillaUsuarios.Size = new Size(772, 200);
+            grillaUsuarios.TabIndex = 8;
             // 
-            // textBox4
+            // groupBOx1
             // 
-            textBox4.Location = new Point(327, 117);
-            textBox4.Margin = new Padding(3, 2, 3, 2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(59, 31);
-            textBox4.TabIndex = 7;
-            // 
-            // BtnBuscarUsuario
-            // 
-            BtnBuscarUsuario.BackColor = Color.FromArgb(199, 200, 202);
-            BtnBuscarUsuario.Location = new Point(506, 78);
-            BtnBuscarUsuario.Margin = new Padding(3, 2, 3, 2);
-            BtnBuscarUsuario.Name = "BtnBuscarUsuario";
-            BtnBuscarUsuario.Size = new Size(94, 36);
-            BtnBuscarUsuario.TabIndex = 6;
-            BtnBuscarUsuario.Text = "Buscar";
-            BtnBuscarUsuario.UseVisualStyleBackColor = false;
-            BtnBuscarUsuario.Click += button1_Click;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(133, 58);
-            textBox3.Margin = new Padding(3, 2, 3, 2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 31);
-            textBox3.TabIndex = 5;
-            textBox3.TextChanged += textBox3_TextChanged;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(133, 93);
-            textBox2.Margin = new Padding(3, 2, 3, 2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 31);
-            textBox2.TabIndex = 4;
-            // 
-            // txtDoc
-            // 
-            txtDoc.Location = new Point(133, 23);
-            txtDoc.Margin = new Padding(3, 2, 3, 2);
-            txtDoc.Name = "txtDoc";
-            txtDoc.Size = new Size(125, 31);
-            txtDoc.TabIndex = 3;
-            txtDoc.TextChanged += textBox1_TextChanged;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Consolas", 11.25F);
-            label3.Location = new Point(25, 102);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 22);
-            label3.TabIndex = 2;
-            label3.Text = "Nombre";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Consolas", 11.25F);
-            label2.Location = new Point(23, 66);
-            label2.Name = "label2";
-            label2.Size = new Size(90, 22);
-            label2.TabIndex = 1;
-            label2.Text = "Apellido";
+            groupBOx1.Controls.Add(label1);
+            groupBOx1.Controls.Add(txtDocumento);
+            groupBOx1.Controls.Add(btnBuscarUsuario);
+            groupBOx1.Controls.Add(grillaUsuarios);
+            groupBOx1.Font = new Font("Consolas", 18F, FontStyle.Bold);
+            groupBOx1.Location = new Point(15, 15);
+            groupBOx1.Name = "groupBOx1";
+            groupBOx1.Size = new Size(810, 286);
+            groupBOx1.TabIndex = 9;
+            groupBOx1.TabStop = false;
+            groupBOx1.Text = "Buscar Usuario";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Consolas", 11.25F);
-            label1.Location = new Point(23, 31);
+            label1.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(23, 41);
             label1.Name = "label1";
-            label1.Size = new Size(100, 22);
-            label1.TabIndex = 0;
+            label1.Size = new Size(139, 29);
+            label1.TabIndex = 10;
             label1.Text = "Documento";
-            label1.Click += label1_Click;
+            // 
+            // txtDocumento
+            // 
+            txtDocumento.Font = new Font("Consolas", 15F);
+            txtDocumento.Location = new Point(168, 38);
+            txtDocumento.Margin = new Padding(3, 4, 3, 4);
+            txtDocumento.Name = "txtDocumento";
+            txtDocumento.Size = new Size(486, 37);
+            txtDocumento.TabIndex = 9;
+            // 
+            // btnBuscarUsuario
+            // 
+            btnBuscarUsuario.BackColor = Color.FromArgb(150, 207, 190);
+            btnBuscarUsuario.Font = new Font("Consolas", 12F, FontStyle.Bold);
+            btnBuscarUsuario.Location = new Point(660, 30);
+            btnBuscarUsuario.Name = "btnBuscarUsuario";
+            btnBuscarUsuario.Size = new Size(130, 50);
+            btnBuscarUsuario.TabIndex = 0;
+            btnBuscarUsuario.Text = "BUSCAR";
+            btnBuscarUsuario.UseVisualStyleBackColor = false;
+            btnBuscarUsuario.Click += btnBuscarUsuario_Click;
+            // 
+            // btnBuscarlibro
+            // 
+            btnBuscarlibro.BackColor = Color.FromArgb(150, 207, 190);
+            btnBuscarlibro.Font = new Font("Consolas", 12F, FontStyle.Bold);
+            btnBuscarlibro.Location = new Point(660, 30);
+            btnBuscarlibro.Name = "btnBuscarlibro";
+            btnBuscarlibro.Size = new Size(130, 50);
+            btnBuscarlibro.TabIndex = 1;
+            btnBuscarlibro.Text = "BUSCAR";
+            btnBuscarlibro.UseVisualStyleBackColor = false;
+            btnBuscarlibro.Click += btnBuscarlibro_Click;
             // 
             // groupBox2
             // 
-            groupBox2.BackColor = Color.FromArgb(150, 207, 190);
-            groupBox2.Controls.Add(BtnBuscarLibro);
-            groupBox2.Controls.Add(textBox7);
-            groupBox2.Controls.Add(textBox6);
-            groupBox2.Controls.Add(textBox5);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Font = new Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(37, 194);
-            groupBox2.Margin = new Padding(3, 2, 3, 2);
+            groupBox2.Controls.Add(label2);
+            groupBox2.Controls.Add(btnBuscarlibro);
+            groupBox2.Controls.Add(txtTitulo);
+            groupBox2.Controls.Add(grillaLibros);
+            groupBox2.Font = new Font("Consolas", 18F, FontStyle.Bold);
+            groupBox2.Location = new Point(15, 307);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(3, 2, 3, 2);
-            groupBox2.Size = new Size(665, 170);
-            groupBox2.TabIndex = 3;
+            groupBox2.Size = new Size(810, 284);
+            groupBox2.TabIndex = 10;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Libro";
+            groupBox2.Text = "Buscar Usuario";
             // 
-            // BtnBuscarLibro
+            // label2
             // 
-            BtnBuscarLibro.BackColor = Color.FromArgb(199, 200, 202);
-            BtnBuscarLibro.Location = new Point(506, 76);
-            BtnBuscarLibro.Margin = new Padding(3, 2, 3, 2);
-            BtnBuscarLibro.Name = "BtnBuscarLibro";
-            BtnBuscarLibro.Size = new Size(94, 36);
-            BtnBuscarLibro.TabIndex = 7;
-            BtnBuscarLibro.Text = "Buscar";
-            BtnBuscarLibro.UseVisualStyleBackColor = false;
+            label2.AutoSize = true;
+            label2.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(23, 41);
+            label2.Name = "label2";
+            label2.Size = new Size(97, 29);
+            label2.TabIndex = 10;
+            label2.Text = "Titulo";
             // 
-            // textBox7
+            // txtTitulo
             // 
-            textBox7.Location = new Point(133, 90);
-            textBox7.Margin = new Padding(3, 2, 3, 2);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(125, 31);
-            textBox7.TabIndex = 5;
+            txtTitulo.Font = new Font("Consolas", 15F);
+            txtTitulo.Location = new Point(168, 38);
+            txtTitulo.Margin = new Padding(3, 4, 3, 4);
+            txtTitulo.Name = "txtTitulo";
+            txtTitulo.Size = new Size(486, 37);
+            txtTitulo.TabIndex = 9;
             // 
-            // textBox6
+            // grillaLibros
             // 
-            textBox6.Location = new Point(133, 56);
-            textBox6.Margin = new Padding(3, 2, 3, 2);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(125, 31);
-            textBox6.TabIndex = 4;
+            grillaLibros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            grillaLibros.DefaultCellStyle = dataGridViewCellStyle2;
+            grillaLibros.Location = new Point(23, 82);
+            grillaLibros.Name = "grillaLibros";
+            grillaLibros.RowHeadersWidth = 51;
+            grillaLibros.Size = new Size(772, 200);
+            grillaLibros.TabIndex = 8;
             // 
-            // textBox5
+            // btnGuardar
             // 
-            textBox5.Location = new Point(133, 24);
-            textBox5.Margin = new Padding(3, 2, 3, 2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 31);
-            textBox5.TabIndex = 3;
-            textBox5.TextChanged += textBox5_TextChanged;
+            btnGuardar.BackColor = Color.FromArgb(150, 207, 190);
+            btnGuardar.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGuardar.Location = new Point(675, 650);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(135, 75);
+            btnGuardar.TabIndex = 13;
+            btnGuardar.Text = "GUARDAR";
+            btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
             // 
-            // label6
+            // btnCancelar
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Consolas", 11.25F);
-            label6.Location = new Point(26, 94);
-            label6.Name = "label6";
-            label6.Size = new Size(60, 22);
-            label6.TabIndex = 2;
-            label6.Text = "Autor";
+            btnCancelar.BackColor = Color.FromArgb(150, 207, 190);
+            btnCancelar.Font = new Font("Consolas", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCancelar.Location = new Point(534, 650);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(135, 75);
+            btnCancelar.TabIndex = 14;
+            btnCancelar.Text = "CANCELAR";
+            btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
-            // label5
+            // label3
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Consolas", 11.25F);
-            label5.Location = new Point(23, 64);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 22);
-            label5.TabIndex = 1;
-            label5.Text = "Título";
+            label3.AutoSize = true;
+            label3.Font = new Font("Consolas", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(38, 603);
+            label3.Name = "label3";
+            label3.Size = new Size(251, 29);
+            label3.TabIndex = 15;
+            label3.Text = "Fecha de prestamo";
             // 
-            // label4
+            // txtFechaPrestamo
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Consolas", 11.25F);
-            label4.Location = new Point(23, 32);
-            label4.Name = "label4";
-            label4.Size = new Size(130, 22);
-            label4.TabIndex = 0;
-            label4.Text = "Código Libro";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Consolas", 11.25F);
-            label7.Location = new Point(37, 404);
-            label7.Name = "label7";
-            label7.Size = new Size(150, 22);
-            label7.TabIndex = 7;
-            label7.Text = "Fecha Préstamo";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Consolas", 11.25F);
-            label8.Location = new Point(37, 454);
-            label8.Name = "label8";
-            label8.Size = new Size(170, 22);
-            label8.TabIndex = 8;
-            label8.Text = "Fecha Devolución";
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(223, 404);
-            textBox8.Margin = new Padding(3, 2, 3, 2);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(125, 29);
-            textBox8.TabIndex = 7;
-            // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(223, 454);
-            textBox9.Margin = new Padding(3, 2, 3, 2);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(125, 29);
-            textBox9.TabIndex = 8;
-            // 
-            // BtnGuardar
-            // 
-            BtnGuardar.BackColor = Color.FromArgb(150, 207, 190);
-            BtnGuardar.Font = new Font("Consolas", 12F);
-            BtnGuardar.Location = new Point(484, 496);
-            BtnGuardar.Margin = new Padding(3, 2, 3, 2);
-            BtnGuardar.Name = "BtnGuardar";
-            BtnGuardar.Size = new Size(98, 43);
-            BtnGuardar.TabIndex = 7;
-            BtnGuardar.Text = "Guardar";
-            BtnGuardar.UseVisualStyleBackColor = false;
-            // 
-            // BtnCancelar
-            // 
-            BtnCancelar.BackColor = Color.FromArgb(150, 207, 190);
-            BtnCancelar.Font = new Font("Consolas", 12F);
-            BtnCancelar.Location = new Point(599, 496);
-            BtnCancelar.Margin = new Padding(3, 2, 3, 2);
-            BtnCancelar.Name = "BtnCancelar";
-            BtnCancelar.Size = new Size(113, 43);
-            BtnCancelar.TabIndex = 9;
-            BtnCancelar.Text = "Cancelar";
-            BtnCancelar.UseVisualStyleBackColor = false;
-            BtnCancelar.Click += button4_Click;
+            txtFechaPrestamo.Font = new Font("Consolas", 15F);
+            txtFechaPrestamo.Location = new Point(295, 600);
+            txtFechaPrestamo.Margin = new Padding(3, 4, 3, 4);
+            txtFechaPrestamo.Name = "txtFechaPrestamo";
+            txtFechaPrestamo.Size = new Size(515, 37);
+            txtFechaPrestamo.TabIndex = 17;
             // 
             // FrmPrestamo
             // 
             AutoScaleDimensions = new SizeF(10F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(199, 200, 202);
-            ClientSize = new Size(1510, 728);
-            Controls.Add(BtnCancelar);
-            Controls.Add(BtnGuardar);
-            Controls.Add(textBox8);
-            Controls.Add(textBox9);
-            Controls.Add(label8);
-            Controls.Add(label7);
+            ClientSize = new Size(837, 728);
+            Controls.Add(txtFechaPrestamo);
+            Controls.Add(label3);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGuardar);
             Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(groupBOx1);
             Font = new Font("Consolas", 11.25F);
             Margin = new Padding(3, 2, 3, 2);
             Name = "FrmPrestamo";
             Text = "Préstamo";
             Load += FrmPrestamo_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)grillaUsuarios).EndInit();
+            groupBOx1.ResumeLayout(false);
+            groupBOx1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)grillaLibros).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private Label label2;
+        private DataGridView grillaUsuarios;
+        private GroupBox groupBOx1;
+        private Button btnBuscarUsuario;
+        private Button btnBuscarlibro;
+        private TextBox txtDocumento;
         private Label label1;
         private GroupBox groupBox2;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox txtDoc;
+        private Label label2;
+        private TextBox txtTitulo;
+        private DataGridView grillaLibros;
+        private Button btnGuardar;
+        private Button btnCancelar;
         private Label label3;
-        private TextBox textBox4;
-        private Button BtnBuscarUsuario;
-        private Label label6;
-        private Label label5;
         private Label label4;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private Label label7;
-        private Label label8;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private Button BtnGuardar;
-        private Button BtnCancelar;
-        private Button BtnBuscarLibro;
+        private TextBox txtFechaPrestamo;
     }
 }
